@@ -4,14 +4,15 @@
 
 
 <h1>Getting Started</h1>
-1 - Clone this repository to desired directory.
-2 - Install node modules `npm install`
-3 - Run gulp to start server and see the work `gulp`
+- Clone this repository to desired directory. 
+- Install node modules `npm install`
+- Run gulp to start server and see the work `gulp`
 
 <hr style="margin-bottom: 30px">
 
 <h1>Credits:</h1>
 
+- StarAdmin (https://github.com/BootstrapDash/StarAdmin-Free-Bootstrap-Admin-Template/blob/master/js/chart.js)
 - Bootstrap 4
 - Font Awesome
 - jQuery
