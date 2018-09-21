@@ -12367,7 +12367,7 @@ button.bg-dark:focus {
 .p-0 {
   padding: 0 !important; }
 
-.pt-0, .card-revenue-table .revenue-item:first-child,
+.pt-0,
 .py-0 {
   padding-top: 0 !important; }
 
@@ -12375,7 +12375,7 @@ button.bg-dark:focus {
 .px-0 {
   padding-right: 0 !important; }
 
-.pb-0, .card-revenue-table .revenue-item:last-child,
+.pb-0,
 .py-0 {
   padding-bottom: 0 !important; }
 
@@ -12427,8 +12427,7 @@ button.bg-dark:focus {
   padding: 1rem !important; }
 
 .pt-3,
-.py-3,
-.card-revenue-table .revenue-item {
+.py-3 {
   padding-top: 1rem !important; }
 
 .pr-3,
@@ -12436,8 +12435,7 @@ button.bg-dark:focus {
   padding-right: 1rem !important; }
 
 .pb-3,
-.py-3,
-.card-revenue-table .revenue-item {
+.py-3 {
   padding-bottom: 1rem !important; }
 
 .pl-3,
@@ -13870,7 +13868,12 @@ input:focus {
 /* Navbar */
 .navbar.default-layout {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(120deg, #00e4d0, #5983e8);
+  background: #00B4DB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   transition: background 0.25s ease;
   -webkit-transition: background 0.25s ease;
   -moz-transition: background 0.25s ease;
@@ -13880,7 +13883,6 @@ input:focus {
     -webkit-transition: width 0.25s ease, background 0.25s ease;
     -moz-transition: width 0.25s ease, background 0.25s ease;
     -ms-transition: width 0.25s ease, background 0.25s ease;
-    background: #ffffff;
     width: 255px;
     height: 63px; }
     .sidebar-dark .navbar.default-layout .navbar-brand-wrapper {
@@ -14205,7 +14207,6 @@ html {
 
 .main-panel {
   transition: width 0.25s ease, margin 0.25s ease;
-  width: calc(100% - 255px);
   min-height: calc(100vh - 63px);
   display: -webkit-flex;
   display: flex;
@@ -14518,111 +14519,43 @@ pre {
     color: #b1b1b1; }
 
 /* Dashboard */
-.card-statistics .highlight-icon {
-  height: 53px;
-  width: 53px;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  border-radius: 50px; }
-  .card-statistics .highlight-icon i {
-    font-size: 27px; }
+.process-btn {
+  background: #00B4DB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
-.card-revenue-table .revenue-item {
-  border-bottom: 1px solid #f2f2f2; }
-  .card-revenue-table .revenue-item:last-child {
-    border-bottom: 0; }
-  .card-revenue-table .revenue-item .revenue-desc {
-    margin-right: auto;
-    width: 80%; }
-    .card-revenue-table .revenue-item .revenue-desc p {
-      margin-bottom: 0; }
-  .card-revenue-table .revenue-item .revenue-amount {
-    margin-left: auto;
-    width: 40%; }
-    .card-revenue-table .revenue-item .revenue-amount p {
-      font-size: 1.25rem;
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-      text-align: right; }
-      .rtl .card-revenue-table .revenue-item .revenue-amount p {
-        text-align: left; }
+.modal-dialog {
+  width: 65%;
+  margin-top: 10%; }
 
-.card-revenue {
-  background: linear-gradient(120deg, rgba(0, 228, 208, 0.7), rgba(89, 131, 232, 0.7));
-  background-size: cover;
-  color: #ffffff; }
-  .card-revenue .highlight-text {
-    font-size: 1.875rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500; }
-  .card-revenue .badge {
-    background-color: rgba(255, 255, 255, 0.2);
-    font-size: 1.125rem;
-    padding: 0.5rem 1.25rem; }
+.card-action .badge:hover {
+  cursor: pointer; }
 
-.card-weather {
-  background: #e1ecff;
-  background-image: linear-gradient(to left bottom, #d6eef6, #dff0fa, #e7f3fc, #eff6fe, #f6f9ff); }
-  .card-weather .card-body {
-    background: #ffffff; }
-    .card-weather .card-body:first-child {
-      background: url("../images/samples/weather.svg") no-repeat center;
-      background-size: cover; }
-  .card-weather .weather-date-location {
-    padding: 0 0 38px; }
-  .card-weather .weather-data {
-    padding: 0 0 4.75rem; }
-    .card-weather .weather-data i {
-      font-size: 5.313rem;
-      line-height: 1; }
-  .card-weather .weakly-weather {
-    background: #ffffff;
-    overflow-x: auto; }
-    .card-weather .weakly-weather .weakly-weather-item {
-      flex: 0 0 14.28%;
-      border-right: 1px solid #f2f2f2;
-      padding: 1rem;
-      text-align: center; }
-      .card-weather .weakly-weather .weakly-weather-item i {
-        font-size: 1.2rem; }
-      .card-weather .weakly-weather .weakly-weather-item:last-child {
-        border-right: 0; }
-      .card-weather .weakly-weather .weakly-weather-item .symbol {
-        color: #c2c2c2;
-        font-size: 1.875rem;
-        font-weight: 300; }
+.card-action .action-items {
+  overflow-y: scroll; }
+  .card-action .action-items .action-item:hover {
+    background-color: #f2f8f9;
+    cursor: pointer; }
 
-.product-chart-wrapper {
-  height: 92%; }
+.table-students thead th {
+  max-width: 150px;
+  white-space: normal;
+  word-wrap: break-word;
+  position: relative;
+  top: 0; }
 
-#dashboardTrendingProgress {
-  width: 60px; }
+.table-students .badge {
+  cursor: pointer; }
 
-.dashboard-bar-chart-legend .col {
-  text-align: center;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  flex-direction: column; }
-  .dashboard-bar-chart-legend .col .bg {
-    margin-left: auto;
-    margin-right: auto;
-    height: 5px;
-    width: 30px;
-    display: block;
-    margin-top: 5px; }
-  .dashboard-bar-chart-legend .col:nth-child(1) .bg {
-    background: #8862e0; }
-  .dashboard-bar-chart-legend .col:nth-child(2) .bg {
-    background: #308ee0; }
-  .dashboard-bar-chart-legend .col:nth-child(3) .bg {
-    background: #e65251; }
+.table-students .i-student {
+  color: #c2c2c2; }
+
+.table-students .i-student:hover {
+  color: #212529;
+  cursor: pointer; }
 
 /*-------------------------------------------------------------------*/
 /* === Components === */

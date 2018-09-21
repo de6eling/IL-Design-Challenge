@@ -66,5 +66,8 @@
         options: options
       });
     }
+    if($('.process-modal-lg').length) {
+      $('.process-modal-lg').modal('show');
+    }
   });
 })(jQuery);

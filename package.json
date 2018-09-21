@@ -1,5 +1,5 @@
 {
-  "name": "Star-Admin-Free",
+  "name": "IL Design Challenge",
   "version": "2.0.0",
   "description": "",
   "main": "index.html",
@@ -33,7 +33,7 @@
     "clean": "rm -rf ./node_modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "bootstrapdash",
+  "author": "Dan Ebeling and bootstrapdash",
   "url": "http://www.bootstrapdash.com/",
   "copyright": "",
   "license": ""
