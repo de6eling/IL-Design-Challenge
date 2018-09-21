@@ -4,9 +4,10 @@
 
 
 <h1>Getting Started</h1>
+
 - Clone this repository to desired directory. 
-- Install node modules `npm install`
-- Run gulp to start server and see the work `gulp`
+- Install node modules ```npm install```.
+- Run gulp to start server and see the work ```gulp```.
 
 <hr style="margin-bottom: 30px">
 
